@@ -1,0 +1,60 @@
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+             CSS VARIABLE
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+:root{
+    --primary-text-color:#fff;
+    --primary-bg-color:#033d77;
+
+    --secondary-text-color:#033d77;
+    --secondary-bg-color:#f1c40f;
+
+    --common-text-color:#fff;
+    --common-bg-color:#033d77;
+
+    
+
+    --white-border:#fff;
+    --black-border:#000;
+    --primary-border:#05c305;
+
+    --white-bg:#fff;
+    
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+              COMMON CSS
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+              HEADER CSS
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.header .header_top{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+.header .login_button a,
+.header .contact_info a{
+    color: var(--primary-text-color);
+    border: 1px solid var(--white-border);
+    padding: 0.3rem 0.8rem;
+    border-radius: 1.1rem;
+    transition: 0.4s;
+}
+.header .login_button a:hover,
+.header .contact_info a:hover{
+    background-color: var(--white-bg) ;
+    color: var(--secondary-text-color);
+    
+}

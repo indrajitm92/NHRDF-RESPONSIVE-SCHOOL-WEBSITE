@@ -11,8 +11,8 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     --common-text-color:#fff;
     --common-bg-color:#033d77;
 
-    
-
+    --default-txt-color :#264a62;
+     --black-text:#000;
     --white-border:#fff;
     --black-border:#000;
     --primary-border:#05c305;
@@ -45,12 +45,12 @@ h1,h2,h3,h4,h5,h6{
               HEADER CSS
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 .header .header_top{
-    background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
+    background-color: var(--secondary-bg-color);
+    --default-txt-color :#264a62;
 }
 .header .login_button a,
 .header .contact_info a{
-    color: var(--primary-text-color);
+    --default-txt-color :#264a62;
     border: 1px solid var(--white-border);
     padding: 0.3rem 0.8rem;
     border-radius: 1.1rem;
@@ -59,13 +59,13 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 .header .login_button a:hover,
 .header .contact_info a:hover{
     background-color: var(--white-bg) ;
-    color: var(--secondary-text-color);
+    --default-txt-color :#264a62;
     
 }
 
 .header_bottom{
-    background-color: var(--primary-bg-color);
+    background-color: var(--secondary-bg-color);
 }
 .header_bottom .nav_item ul li a{
-    color: var(--primary-text-color);
+    --default-txt-color :#264a62;
 }

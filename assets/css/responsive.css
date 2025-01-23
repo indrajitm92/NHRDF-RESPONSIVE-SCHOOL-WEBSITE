@@ -1,0 +1,16 @@
+@media screen and (max-width:1199px){
+    .header .login_button a, .header .contact_info a {
+    
+        font-size: .7rem;
+    }
+    .text-center {
+        
+        font-size: .8rem;
+    }
+    .header_bottom .nav_item ul li a {
+        color: var(--default-txt-color);
+        font-size: .9rem;
+        transition: 0.4s;
+        padding: .6rem .8rem;
+    }
+}

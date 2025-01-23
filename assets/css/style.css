@@ -36,6 +36,10 @@ img{
     width: 100%;
     height: auto;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
               HEADER CSS
@@ -57,4 +61,11 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     background-color: var(--white-bg) ;
     color: var(--secondary-text-color);
     
+}
+
+.header_bottom{
+    background-color: var(--primary-bg-color);
+}
+.header_bottom .nav_item ul li a{
+    color: var(--primary-text-color);
 }

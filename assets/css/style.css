@@ -82,9 +82,9 @@ h1,h2,h3,h4,h5,h6,p{
 .header_bottom{
     background-color: var(--secondary-bg-color);
 }
-.header_bottom .nav_item ul{
+/* .header_bottom .nav_item ul{
     justify-content: space-between;
-}
+} */
 
 .header_bottom .nav_item ul li a{
     color: var(--default-txt-color);
@@ -95,4 +95,11 @@ h1,h2,h3,h4,h5,h6,p{
 .header_bottom .nav_item ul li a:hover{
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+}
+
+.header_bottom .fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
 }

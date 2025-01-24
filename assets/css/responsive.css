@@ -1,16 +1,53 @@
-@media screen and (max-width:1199px){
-    .header .login_button a, .header .contact_info a {
-    
-        font-size: .7rem;
-    }
-    .text-center {
-        
-        font-size: .8rem;
-    }
-    .header_bottom .nav_item ul li a {
-        color: var(--default-txt-color);
-        font-size: .9rem;
+@media screen and (max-width: 1200px) {
+  .header .login_button a,
+  .header .contact_info a {
+    font-size: 0.7rem;
+  }
+  .timestamp {
+    font-size: 0.8rem;
+    color: var(--primary-txt-color);
+  }
+  .header_bottom .nav_item ul li a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header .header_bottom .nav_item {
+    position: relative;
+  }
+ 
+    .header .header_bottom .nav_item ul {
+        position: absolute;
+        background-color: var(--secondary-bg-color);
+        padding: 0;
+        margin-left: 0;
+        /*  width: 100%;  */ 
+        left: 100%; 
+        top: 1rem;
+        opacity: 0;
+        visibility: hidden; 
         transition: 0.4s;
-        padding: .6rem .8rem;
     }
+    .header .header_bottom .nav_item ul.active{
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        width: 100%;
+    }
+  .header .header_bottom .nav_item ul li {
+    transition: 0.4s;
+  }
+  .header .header_bottom .nav_item ul li:hover {
+    background-color: var(--primary-bg-color);
+  }
+  .header_bottom .nav_item ul li a {
+	padding: .4rem .8rem;
+}
+  .header .header_bottom .nav_item ul li:hover a {
+    color: var(--primary-text-color);
+  }
+  .header .header_bottom .toggle_btn{
+    color: var(--primary-text-color);
+  }
 }

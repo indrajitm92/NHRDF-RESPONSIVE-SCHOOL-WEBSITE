@@ -73,31 +73,31 @@ h1,h2,h3,h4,h5,h6,p{
    
     
 
-.header_middle .logo img{
+.header .header_middle .logo img{
     width: 80px;
     height: 80px;
 }
 
 
-.header_bottom{
+.header .header_bottom{
     background-color: var(--secondary-bg-color);
 }
 /* .header_bottom .nav_item ul{
     justify-content: space-between;
 } */
 
-.header_bottom .nav_item ul li a{
+.header .header_bottom .nav_item ul li a{
     color: var(--default-txt-color);
     font-size: 1.3rem;
     transition: 0.4s;
     padding: .6rem .8rem;
 }
-.header_bottom .nav_item ul li a:hover{
+.header .header_bottom .nav_item ul li a:hover{
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }
 
-.header_bottom .fixed{
+.header .header_bottom.fixed {
     position: fixed;
     top: 0;
     width: 100%;

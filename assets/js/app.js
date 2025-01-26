@@ -22,15 +22,17 @@ document.addEventListener('DOMContentLoaded',() => {
         }
     }
 
-
     // sticky header
-    let headerBottom = document.querySelector('.header_bottom');
-    let headerBottomHeight = headerBottom.offsetTop + headerBottom.offsetHeight;
-    window.addEventListener('scroll',() => {
-        if (window.scrollY > headerBottomHeight) {
-            headerBottom.classList.add('fixed');
-        } else {
-            headerBottom.classList.remove('fixed');
-        }
-    })
+let headerBottom = document.querySelector('.header_bottom');
+let headerBottomHeight = headerBottom.offsetTop + headerBottom.offsetHeight;
+window.addEventListener('scroll',() => {
+    if (window.scrollY > headerBottomHeight) {
+        headerBottom.classList.add('fixed');
+    } else {
+        headerBottom.classList.remove('fixed');
+    }
+})
+
+
+    
 });

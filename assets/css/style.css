@@ -82,11 +82,9 @@ h1,h2,h3,h4,h5,h6,p{
 .header .header_bottom{
     background-color: var(--secondary-bg-color);
 }
-/* .header_bottom .nav_item ul{
-    justify-content: space-between;
-} */
 
-.header .header_bottom .nav_item ul li a{
+
+.header .header_bottom .nav_item>ul>li>a{
     color: var(--default-txt-color);
     font-size: 1.3rem;
     transition: 0.4s;
@@ -102,4 +100,49 @@ h1,h2,h3,h4,h5,h6,p{
     top: 0;
     width: 100%;
    
+}
+.header .header_bottom .nav_item .dropdwn{
+    position: relative;
+}
+.header .header_bottom .nav_item .dropdwn .dropdwn_menu{
+    position: absolute;
+    top: 105%;
+    width: 200px;
+    background-color: var(--secondary-bg-color);
+    left: 100%; 
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    
+}
+.header .header_bottom .nav_item .dropdwn .dropdwn_menu li a{
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.header .header_bottom .nav_item .dropdwn:hover .dropdwn_menu{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.my_chat_box{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    
+}
+.my_chat_box .chat_icon{
+    width: 50px;
+    height: 50px;
+    background-color: #05c305;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.my_chat_box .messagr_box{
+    width: 500px;
 }

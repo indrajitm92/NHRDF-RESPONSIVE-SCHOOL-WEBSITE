@@ -101,6 +101,11 @@ h1,h2,h3,h4,h5,h6,p{
     width: 100%;
    
 }
+
+/*:::::::::::::::::::::::::::::::::::::::
+              TOP HEADER DROPDOWN CSS
+:::::::::::::::::::::::::::::::::::::::*/
+
 .header .header_bottom .nav_item .dropdwn{
     position: relative;
 }
@@ -125,11 +130,14 @@ h1,h2,h3,h4,h5,h6,p{
     opacity: 1;
     visibility: visible;
 }
-.my_chat_box{
+
+/*:::::::::::::::::::::::::::::::::::::::
+             CHATBOX CSS
+:::::::::::::::::::::::::::::::::::::::*/
+.my_chat_box {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-    
+    bottom: 20px;
+    right: 50px;
 }
 .my_chat_box .chat_icon{
     width: 50px;
@@ -143,6 +151,40 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 25px;
     cursor: pointer;
 }
-.my_chat_box .messagr_box{
-    width: 500px;
+.my_chat_box .messagr_box {
+    position: absolute;
+    bottom: 70px;
+    right: -10px;
+    width: 400px;
+    display: none;
+}
+.my_chat_box .messagr_box.active {
+    display: block;
+}
+.my_chat_box .messagr_box .messages{
+    height: 300px;
+    width: 100%;
+    overflow: scroll;
+    
+
+}
+.my_chat_box .messagr_box .messages .author_img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #05c305;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+.my_chat_box .messagr_box .messages .message{
+    
+    border-radius: 10px;
+    color: #fff;
+    background-color: #05c305;
+    padding: 5px 8px;
+    max-width: 70%;
+    
 }

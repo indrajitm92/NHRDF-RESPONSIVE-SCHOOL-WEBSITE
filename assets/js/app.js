@@ -23,16 +23,57 @@ document.addEventListener('DOMContentLoaded',() => {
     }
 
     // sticky header
-let headerBottom = document.querySelector('.header_bottom');
-let headerBottomHeight = headerBottom.offsetTop + headerBottom.offsetHeight;
-window.addEventListener('scroll',() => {
+    let headerBottom = document.querySelector('.header_bottom');
+    let headerBottomHeight = headerBottom.offsetTop + headerBottom.offsetHeight;
+    window.addEventListener('scroll',() => {
     if (window.scrollY > headerBottomHeight) {
         headerBottom.classList.add('fixed');
     } else {
         headerBottom.classList.remove('fixed');
     }
-})
+  })
+
+  // chatbox
+  let chat_icon = document.querySelector('.chat_icon');
+  let messagr_box = document.querySelector('.messagr_box');
+  chat_icon.addEventListener('click',() => {
+    messagr_box.classList.toggle('active');
+  })
+  let close_btn = document.querySelector('.close_btn');
+  close_btn.addEventListener('click',() => {
+    messagr_box.classList.remove('active');
+  })
+
+  // message send
+  let send_btn = document.querySelector('#send_btn');
+  let message = document.querySelector('#message_input');
+  let message_wrap = document.querySelector('.messages');
+  send_btn.addEventListener('click',() => {
+   let input_message = message.value;
+   if(input_message == '') {
+       alert('Please Enter Your Message');
+   }
+   else{
+    let message_show =`<div class="sender d-flex align-items-center gap-2 mb-2 justify-content-start">
+                            <div class="author_img">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="message">
+                                <p>${input_message}</p>
+                            </div>
+                        </div>`;
 
 
-    
+   message_wrap.innerHTML += message_show;
+   message.value = '';
+   }
+   
+
+  });
+  let clear_btn = document.querySelector('.clear_btn');
+  clear_btn.addEventListener('click',() => {
+    message_wrap.innerHTML = '';
+  })
+
+  
 });

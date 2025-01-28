@@ -200,6 +200,10 @@ h1,h2,h3,h4,h5,h6,p{
     justify-content: center;
     margin-bottom: 10px;
 }
+.faq_section .faq_wraper .faq_item .faq_title .faq_arrow{
+    color: var(--primary-text-color);
+    font-size: 18px;
+}
 .faq_section .faq_wraper .faq_item.active .faq_title .faq_arrow{
     transform: rotate(180deg);
 }
@@ -207,12 +211,17 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 10px 15px;
     
 }
-.faq_section .faq_wraper .faq_item .faq_description p{
+.faq_section .faq_wraper .faq_item .faq_description {
     background-color: var(--secondary-bg-color);
-    color: var(--primary-text-color);
     padding: 10px 15px;
+    margin-bottom: 10px;
     display: none;
 }
-.faq_section .faq_wraper .faq_item.active .faq_description p{
+.faq_section .faq_wraper .faq_item .faq_description p{
+    
+    color: var(--primary-text-color);
+    
+}
+.faq_section .faq_wraper .faq_item.active .faq_description {
     display: block;
 }

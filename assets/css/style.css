@@ -188,3 +188,31 @@ h1,h2,h3,h4,h5,h6,p{
     max-width: 70%;
     
 }
+/*:::::::::::::::::::::::::::::::::::::::
+              FAQ CSS
+:::::::::::::::::::::::::::::::::::::::*/
+
+.faq_section .faq_wraper .faq_item .faq_title{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.faq_section .faq_wraper .faq_item.active .faq_title .faq_arrow{
+    transform: rotate(180deg);
+}
+.faq_section .faq_wraper .faq_item .faq_title h3{ 
+    padding: 10px 15px;
+    
+}
+.faq_section .faq_wraper .faq_item .faq_description p{
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    padding: 10px 15px;
+    display: none;
+}
+.faq_section .faq_wraper .faq_item.active .faq_description p{
+    display: block;
+}

@@ -73,7 +73,21 @@ document.addEventListener('DOMContentLoaded',() => {
   let clear_btn = document.querySelector('.clear_btn');
   clear_btn.addEventListener('click',() => {
     message_wrap.innerHTML = '';
-  })
+  });
 
+  // faq js
+
+  let faq_titles = document.querySelectorAll('.faq_title');
+  faq_titles.forEach((title)=>{
+    title.onclick((event)=>{
+        let faq_items = document.querySelectorAll('.faq_item');
+        faq_items.forEach((item)=>{
+            if(item.classList.contains('active')){
+                item.classList.remove('active');
+            }
+        });
+        event.target.closest('.faq_title').parentElement.classList.toggle('active');
+    });
+  });
   
 });
